@@ -1,6 +1,6 @@
 {
-  "id": "ddd68f6d-aa0d-4f8c-bf14-4c5bff68019f",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "21c6d9bc-58a1-4821-8e45-277548f5a030",
+  "prevId": "ddd68f6d-aa0d-4f8c-bf14-4c5bff68019f",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -33,14 +33,14 @@
         },
         "equipment": {
           "name": "equipment",
-          "type": "exercise_equipment",
+          "type": "equipment",
           "typeSchema": "public",
           "primaryKey": false,
           "notNull": false
         },
         "category": {
           "name": "category",
-          "type": "exercise_category",
+          "type": "category",
           "typeSchema": "public",
           "primaryKey": false,
           "notNull": false
@@ -122,7 +122,7 @@
         },
         "type": {
           "name": "type",
-          "type": "pr_type",
+          "type": "type",
           "typeSchema": "public",
           "primaryKey": false,
           "notNull": false

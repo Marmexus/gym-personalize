@@ -1,8 +1,8 @@
 import { db } from "@/db";
-import { usersTable } from "@/db/schema";
+import { user } from "@/db/schema";
 
 export default async function UserPage() {
-  const users = await db.select().from(usersTable);
+  const users = await db.select().from(user);
   return (
     <div>
       {users.map((user) => (

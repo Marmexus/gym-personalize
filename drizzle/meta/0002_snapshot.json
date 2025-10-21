@@ -1,6 +1,6 @@
 {
-  "id": "ddd68f6d-aa0d-4f8c-bf14-4c5bff68019f",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "e829b751-4237-4b0e-aa78-2b0bb0fdd0bc",
+  "prevId": "21c6d9bc-58a1-4821-8e45-277548f5a030",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -494,7 +494,54 @@
       "isRLSEnabled": false
     }
   },
-  "enums": {},
+  "enums": {
+    "public.exercise_category": {
+      "name": "exercise_category",
+      "schema": "public",
+      "values": [
+        "arms",
+        "shoulders",
+        "chest",
+        "back",
+        "core",
+        "legs",
+        "full_body",
+        "mobility",
+        "cardio"
+      ]
+    },
+    "public.exercise_equipment": {
+      "name": "exercise_equipment",
+      "schema": "public",
+      "values": [
+        "dumbbell",
+        "barbell",
+        "bodyweight"
+      ]
+    },
+    "public.pr_type": {
+      "name": "pr_type",
+      "schema": "public",
+      "values": [
+        "weight",
+        "reps",
+        "sets"
+      ]
+    },
+    "public.weekday": {
+      "name": "weekday",
+      "schema": "public",
+      "values": [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ]
+    }
+  },
   "schemas": {},
   "sequences": {},
   "roles": {},

@@ -36,6 +36,9 @@ export const user = pgTable("users", {
   updated_at: timestamp({ withTimezone: true }).defaultNow(),
 });
 
+export type InsertUser = typeof user.$inferInsert;
+export type SelectUser = typeof user.$inferSelect;
+
 export const exercise = pgTable("exercises", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   name: varchar({ length: 255 }).notNull(),

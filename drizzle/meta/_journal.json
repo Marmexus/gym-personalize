@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1761064124406,
-      "tag": "0000_flashy_patriot",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1761064436074,
-      "tag": "0001_cool_karma",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1761064804316,
-      "tag": "0002_bizarre_ulik",
+      "when": 1761412350883,
+      "tag": "0000_fair_bedlam",
       "breakpoints": true
     }
   ]

@@ -6,10 +6,9 @@ export async function createUser(data: InsertUser): Promise<void> {
   await db.insert(user).values(data);
 }
 
-export async function findUserByField(
-  field: keyof Pick<SelectUser, "id" | "username" | "email">,
-  value: number | string
-): Promise<SelectUser | null> {
+export async function findUserByField<
+  K extends keyof Pick<SelectUser, "id" | "username" | "email">
+>(field: K, value: SelectUser[K]): Promise<SelectUser | null> {
   const result = await db
     .select()
     .from(user)

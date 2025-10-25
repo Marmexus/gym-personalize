@@ -7,7 +7,10 @@ export const signUpSchema = z
     email: z
       .email({ error: "Please enter valid email" })
       .min(1, { error: "Please enter email" }),
-    password: z.string().min(1, { error: "Please enter password" }),
+    password: z
+      .string({ error: "Please enter password" })
+      .min(6, { error: "Password is too short" })
+      .max(16, { error: "Password is too long" }),
     confirmPassword: z
       .string()
       .min(1, { error: "Please enter confirm password" }),

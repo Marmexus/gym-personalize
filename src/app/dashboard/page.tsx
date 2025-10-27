@@ -1,6 +1,8 @@
 import { auth } from "@/auth";
+import { Button } from "@/components/ui/button";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { signOut } from "../api/sign-out";
 
 export default async function DashboardPage() {
   const session = await auth.api.getSession({
@@ -13,5 +15,14 @@ export default async function DashboardPage() {
 
   console.log(session);
 
-  return <div>DashboardPage</div>;
+  return (
+    <div className="flex flex-col gap-4">
+      <div>Dashboard</div>
+      {session && (
+        <Button type="button" onClick={signOut}>
+          Sign out
+        </Button>
+      )}
+    </div>
+  );
 }
